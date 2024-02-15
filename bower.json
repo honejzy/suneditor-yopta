@@ -1,0 +1,38 @@
+{
+  "name": "suneditor-yopta",
+  "version": "1.0.0",
+  "description": "Pure JavaScript based WYSIWYG web editor",
+  "main": "src/suneditor.js",
+  "keywords": [
+    "wysiwyg",
+    "wysiwyg editor",
+    "wysiwyg html editor",
+    "rich text",
+    "rich editor",
+    "rich text editor",
+    "html",
+    "text",
+    "editor",
+    "contenteditable",
+    "javascript",
+    "vanillajs"
+  ],
+  "author": "Yoptacademy Tech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoptacademytech/suneditor-yopta/issues"
+  },
+  "homepage": "http://suneditor.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoptacademytech/suneditor-yopta.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "authors": [
+    "Yoptacademy Tech"
+  ]
+}
