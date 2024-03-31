@@ -1,6 +1,6 @@
 {
   "name": "suneditor-yoptatech",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Vanilla javascript based WYSIWYG web editor, with no dependencies",
   "author": "Yoptacademy Tech",
   "license": "MIT",
@@ -53,7 +53,6 @@
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {},
   "keywords": [
     "wysiwyg",
     "wysiwyg editor",

@@ -2057,10 +2057,10 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                             util.removeItem(previous);
                         }
         
-                        if (next && next.length > 0) {
-                            oNode.textContent += nextText;
-                            util.removeItem(next);
-                        }
+                        // if (next && next.length > 0) {
+                        //     oNode.textContent += nextText;
+                        //     util.removeItem(next);
+                        // }
 
                         const newRange = {
                             container: oNode,
@@ -2084,7 +2084,7 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                         }
     
                         if (util._isIgnoreNodeChange(oNode)) {
-                            oNode = oNode.nextSibling;
+                            // oNode = oNode.nextSibling;
                             offset = 0;
                         }
                     }
@@ -8868,7 +8868,6 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                     let c, a, t, prev, firstCon;
                     const pElement = document.createElement("p");
                     dom.insertBefore(pElement, dom.firstChild);
-                    let stepCount = 0;
                     while ((c = domTree[0])) {
                         if (prev && prev.nodeType === 3 && a && a.nodeType === 1 && util.isBreak(c)) {
                             prev = c;
@@ -8880,8 +8879,6 @@ export default function (context, pluginCallButtons, plugins, lang, options, _re
                         a = t.container || t;
                         if (!firstCon) firstCon = t;
                         prev = c;
-                         // Increment step count
-                        stepCount++;
                     }
 
                     if (prev.nodeType === 3 && a.nodeType === 1) a = prev;
