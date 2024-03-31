@@ -313,6 +313,7 @@
     border: 1px solid #e1e1e1;
     padding:0.4em;
     background-clip: padding-box;
+    vertical-align: top;
 }
 /** table style class */
 .sun-editor-editable table.se-table-size-auto {

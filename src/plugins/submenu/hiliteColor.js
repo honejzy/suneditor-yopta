@@ -71,7 +71,15 @@ export default {
      * @Override _colorPicker
      */
     onChangeInput: function (e) {
-        this.plugins.colorPicker.setCurrentColor.call(this, e.target.value);
+        let color = e.target.value;
+    
+        // Check if the color starts with "#" or not
+        if (!color.startsWith("#")) {
+            // If it doesn't start with "#", prepend it
+            color = "#" + color;
+        }
+    
+        this.plugins.colorPicker.setCurrentColor.call(this, color);
     },
 
     submit: function () {
@@ -93,6 +101,11 @@ export default {
     applyColor: function (color) {
         if (!color) return;
         
+        // Check if the color starts with "#" or not
+        if (!color.startsWith("#")) {
+            // If it doesn't start with "#", prepend it
+            color = "#" + color;
+        }
         const newNode = this.util.createElement('SPAN');
         newNode.style.backgroundColor = color;
         this.nodeChange(newNode, ['background-color'], null, null);
